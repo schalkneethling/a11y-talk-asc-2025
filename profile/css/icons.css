@@ -1,0 +1,31 @@
+.icon::before {
+  background-color: var(--color-brand-primary);
+  block-size: var(--icon-size);
+  content: "";
+  display: block;
+  inline-size: var(--icon-size);
+}
+
+.icon-devto::before {
+  mask-image: url("../assets/icons/devto.svg");
+}
+
+.icon-github::before {
+  mask-image: url("../assets/icons/github.svg");
+}
+
+.icon-linkedin::before {
+  mask-image: url("../assets/icons/linkedin.svg");
+}
+
+.icon-mastodon::before {
+  mask-image: url("../assets/icons/mastodon.svg");
+}
+
+.icon-twitch::before {
+  mask-image: url("../assets/icons/twitch.svg");
+}
+
+.icon-youtube::before {
+  mask-image: url("../assets/icons/youtube.svg");
+}

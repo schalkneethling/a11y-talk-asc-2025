@@ -1,0 +1,13 @@
+.hero {
+  block-size: 25rem;
+  inline-size: 100%;
+  overflow: hidden;
+
+  img {
+    block-size: auto;
+    display: block;
+    inset-block-start: -10rem;
+    max-inline-size: 100%;
+    position: relative;
+  }
+}

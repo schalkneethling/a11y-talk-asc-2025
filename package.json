@@ -1,0 +1,40 @@
+{
+  "name": "a11y-talk-asc-2025",
+  "version": "1.0.0",
+  "description": "Slides from my talk at the 2025 Accessibility Summer Camp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier:lint": "prettier .",
+    "prettier:format": "prettier --write .",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint **/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schalkneethling/a11y-talk-asc-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schalkneethling/a11y-talk-asc-2025/issues"
+  },
+  "homepage": "https://github.com/schalkneethling/a11y-talk-asc-2025#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0"
+  },
+  "dependencies": {
+    "@guidepup/guidepup": "^0.24.0",
+    "@guidepup/playwright": "^0.14.2",
+    "@playwright/test": "^1.52.0"
+  }
+}

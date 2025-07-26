@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile of Schalk Neethling - Open Web Engineer</title>
+  <meta name="description"
+    content="The profile of Schalk Neethling, an Open Web Engineer. Learn about my work, projects, and get in touch." />
+  <meta name="apple-mobile-web-app-title" content="Schalk" />
+
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+
+  <meta property="og:title" content="Profile of Schalk Neethling - Open Web Engineer" />
+  <meta property="og:description"
+    content="The profile of Schalk Neethling, an Open Web Engineer. Learn about my work, projects, and get in touch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://schalkneethling.com" />
+  <meta property="og:image" content="assets/social-graph.png" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+</head>
+
+<body>
+  <div class="hero">
+    <!-- Photo by Jeremy Bishop on Unsplash: https://unsplash.com/photos/photo-of-underwater-1braZySlEKA -->
+    <picture>
+      <source srcset="assets/hero-jeremy-bishop-unsplash.avif" type="image/avif" />
+      <img src="assets/hero-jeremy-bishop-unsplash.webp" height="1500" width="2000" alt="" />
+    </picture>
+  </div>
+  <div class="page-wrapper">
+    <main>
+      <article class="about-me">
+        <header class="about-me-header">
+          <picture>
+            <source srcset="assets/avatar-schalk-300.avif" type="image/avif" />
+            <img class="avatar" src="assets/avatar-schalk-300.webp" height="300" width="300"
+              alt="A middle aged white male with a beard. Slightly smiling. Holding up two finger that symbolises a peace sign." />
+          </picture>
+          <hgroup>
+            <h1>Schalk Neethling</h1>
+            <p class="heading-large">Open Web Engineer</p>
+          </hgroup>
+          <button type="button" id="show-dialog" class="button button-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg>
+            Get in touch
+          </button>
+        </header>
+        <p class="about-me-bio">
+          I fell in love with the web 15 years ago and ever since then I have
+          been an evangelist for web standards, the open web, and web
+          accessibility. As an indie tinkerer, open source developer, mentor, and
+          podcaster, I love bringing new ideas to life and elevating voices
+          aiming to make a positive impact. I believe in respect, openness,
+          and creating opportunities for growth.
+        </p>
+      </article>
+    </main>
+
+    <dialog aria-labelledby="dialog-contact-form-title" id="dialog-contact-form">
+      <form method="dialog">
+        <button class="button button-close" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+            role="img">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+          </svg>
+          <span class="visually-hidden">Close dialog</span>
+        </button>
+      </form>
+
+      <h2 class="dialog-heading" id="dialog-contact-form-title">Get in touch</h2>
+
+      <p class="form-success" hidden>Your information has been successfully submitted. Thank you.</p>
+      <p class="form-critical" hidden>Oh no! Something went wrong. Please try again.</p>
+
+      <form name="contact" method="post" action="/" data-netlify="true">
+        <fieldset>
+          <legend>Enter your details (all fields are required)</legend>
+
+          <div class="form-group">
+            <label for="name">First name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your email address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">How can I help you?</label>
+            <textarea rows="5" id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary">Send message</button>
+        </fieldset>
+      </form>
+    </dialog>
+
+    <aside class="linktree" aria-labelledby="linktree-label">
+      <h2 class="heading-section heading-medium all-caps" id="linktree-label">On The Interwebs</h2>
+      <ul class="reset-list linktree-link-list">
+        <li>
+          <a class="linktree-link" href="https://github.com/schalkneethling" rel="external">
+            <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+              <g clip-path="url(#a)">
+                <path
+                  d="M20.03 7.095a5.605 5.605 0 0 0-.505-4.47.75.75 0 0 0-.65-.375 5.601 5.601 0 0 0-4.5 2.25h-2.25a5.601 5.601 0 0 0-4.5-2.25.75.75 0 0 0-.65.375 5.604 5.604 0 0 0-.504 4.47A5.45 5.45 0 0 0 5.75 9.75v.75a5.255 5.255 0 0 0 4.541 5.2A3.731 3.731 0 0 0 9.5 18v.75H7.25A2.25 2.25 0 0 1 5 16.5a3.75 3.75 0 0 0-3.75-3.75.75.75 0 1 0 0 1.5A2.25 2.25 0 0 1 3.5 16.5a3.75 3.75 0 0 0 3.75 3.75H9.5v1.5a.75.75 0 1 0 1.5 0V18a2.25 2.25 0 0 1 4.5 0v3.75a.75.75 0 1 0 1.5 0V18c0-.833-.278-1.643-.791-2.3a5.255 5.255 0 0 0 4.541-5.2v-.75a5.451 5.451 0 0 0-.72-2.655Zm-.78 3.405a3.75 3.75 0 0 1-3.75 3.75H11a3.75 3.75 0 0 1-3.75-3.75v-.75c.01-.75.234-1.482.647-2.107A.75.75 0 0 0 8 6.922a4.107 4.107 0 0 1 .074-3.149 4.114 4.114 0 0 1 3.03 1.881.75.75 0 0 0 .63.346h3.032a.75.75 0 0 0 .632-.346 4.112 4.112 0 0 1 3.03-1.88 4.108 4.108 0 0 1 .072 3.148.758.758 0 0 0 .094.717c.417.626.645 1.359.656 2.111v.75Z"
+                  fill="currentColor" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" transform="translate(.5)" d="M0 0h24v24H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a class="linktree-link icon icon-mastodon" href="https://hachyderm.io/@schalkneethling" rel="external">
+            <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+              <path
+                d="M17.75 3H7.25A3.75 3.75 0 0 0 3.5 6.75V18a3.75 3.75 0 0 0 3.75 3.75h8.25a.75.75 0 1 0 0-1.5H7.25A2.25 2.25 0 0 1 5 18v-.75h12.75a3.75 3.75 0 0 0 3.75-3.75V6.75A3.75 3.75 0 0 0 17.75 3ZM20 13.5a2.25 2.25 0 0 1-2.25 2.25H5v-9A2.25 2.25 0 0 1 7.25 4.5h10.5A2.25 2.25 0 0 1 20 6.75v6.75Zm-2.25-3.75v3a.75.75 0 1 1-1.5 0v-3a1.5 1.5 0 1 0-3 0v3a.75.75 0 1 1-1.5 0v-3a1.5 1.5 0 1 0-3 0v3a.75.75 0 1 1-1.5 0v-3a3 3 0 0 1 5.25-1.98 3 3 0 0 1 5.25 1.98Z"
+                fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">Join the
+              conversation on
+            </span>Mastodon
+          </a>
+        </li>
+        <li>
+          <a class="linktree-link icon icon-linkedin" href="https://linkedin.com/in/schalkneethling" rel="external">
+            <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+              <path
+                d="M20.75 2.25H4.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h16.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm0 18H4.25V3.75h16.5v16.5ZM9.5 10.5v6a.75.75 0 1 1-1.5 0v-6a.75.75 0 1 1 1.5 0Zm8.25 2.625V16.5a.75.75 0 1 1-1.5 0v-3.375a1.875 1.875 0 1 0-3.75 0V16.5a.75.75 0 1 1-1.5 0v-6a.75.75 0 0 1 1.48-.167 3.375 3.375 0 0 1 5.27 2.792Zm-7.875-5.25a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0Z"
+                fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">Connect
+              with me on LinkedIn
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="linktree-link icon icon-youtube" href="https://www.youtube.com/@SchalkNeethling" rel="external">
+            <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+              <path
+                d="m15.916 11.376-4.5-3A.75.75 0 0 0 10.25 9v6a.75.75 0 0 0 1.166.624l4.5-3a.75.75 0 0 0 0-1.248Zm-4.166 2.222v-3.192L14.148 12l-2.398 1.598Zm10.718-7.08A2.25 2.25 0 0 0 21.11 4.98c-3.214-1.241-8.329-1.23-8.61-1.23-.281 0-5.396-.011-8.61 1.23a2.25 2.25 0 0 0-1.358 1.537C2.289 7.454 2 9.163 2 12c0 2.837.289 4.547.532 5.483A2.25 2.25 0 0 0 3.89 19.02c3.079 1.188 7.897 1.229 8.548 1.229h.124c.65 0 5.472-.041 8.548-1.23a2.25 2.25 0 0 0 1.358-1.537c.243-.938.532-2.646.532-5.483 0-2.837-.289-4.547-.532-5.482ZM21.016 17.11a.75.75 0 0 1-.447.515c-2.967 1.146-8.014 1.125-8.062 1.125H12.5c-.05 0-5.093.019-8.063-1.125a.75.75 0 0 1-.447-.515c-.228-.856-.49-2.433-.49-5.111s.263-4.255.484-5.107a.75.75 0 0 1 .447-.518C7.292 5.27 12.087 5.25 12.479 5.25h.026c.05 0 5.098-.017 8.062 1.125a.75.75 0 0 1 .447.515c.224.855.486 2.432.486 5.11 0 2.678-.262 4.255-.484 5.107v.004Z"
+                fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">Learn
+              with me on YouTube
+            </span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <script src="js/dialog.js"></script>
+  <script src="js/form-handler.js"></script>
+</body>
+
+</html>

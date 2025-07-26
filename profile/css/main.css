@@ -1,0 +1,50 @@
+@import url("./variables.css");
+@import url("./typography.css");
+@import url("./avatar.css");
+@import url("./buttons.css");
+@import url("./dialog.css");
+@import url("./forms.css");
+@import url("./about.css");
+@import url("./linktree.css");
+@import url("./hero.css");
+@import url("./utils.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-neutral-inverted);
+  color: var(--color-brand-primary);
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: var(--color-link-color);
+  text-decoration: none;
+}
+
+a:hover svg,
+a:focus svg {
+  scale: 1.2;
+  transition: scale 0.2s ease-in-out;
+}
+
+.page-wrapper {
+  inset-block-start: -7rem;
+  margin: 0 auto;
+  max-width: 45rem;
+  max-width: 90rch;
+  padding: var(--size-32) var(--size-24);
+  position: relative;
+}
+
+@media screen and (width > 47.9375rem) {
+  main {
+    text-align: center;
+  }
+}
